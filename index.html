@@ -103,10 +103,12 @@
   <hr>
   <p class="big">Our brand new website is coming soon, sign up below to join the Mossley Heritage email list and get notified when we go live!</p>
   <hr class="fancy">
-  <form id="subscribe-form" method="post" action="https://tinyletter.com/mossleyheritage">
-    <input type="email" id="email" placeholder="Email">
+  <form id="subscribe-form" method="post" action="https://tinyletter.com/mossleyheritage" target="popupwindow" onsubmit="window.open('https://tinyletter.com/mossleyheritage', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+    <input type="hidden" value="1" name="embed">
+    <input type="email" name="email" id="tleemail" placeholder="Email">
     <button type="submit">Sign up</button>
   </form>
+
   <hr class="fancy">
   <p class="copyright">Copyright &copy; 2018 Mossley Heritage.</p>
 
